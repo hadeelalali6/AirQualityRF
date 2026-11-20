@@ -1,137 +1,74 @@
-Air Quality Classification Using Random Forest
+# Air Quality Classification Using Random Forest
 
-Project Overview
+## Project Overview
 
 This project aims to classify air quality levels using the Random Forest algorithm and evaluate the impact of optimization and hyperparameter tuning on model performance.
 
-Dataset
+## Dataset
 
 The dataset contains 5,000 samples and 9 input features related to environmental conditions and air pollution.
 
-Features
+### Features
 
-Temperature
+- Temperature
+- Humidity
+- PM2.5
+- PM10
+- NO2
+- SO2
+- CO
+- Proximity to Industrial Areas
+- Population Density
 
-Humidity
+### Target Classes
 
-PM2.5
+| Class | Samples |
+|---|---:|
+| Good | 2,000 |
+| Moderate | 1,500 |
+| Poor | 1,000 |
+| Hazardous | 500 |
+| **Total** | **5,000** |
 
-PM10
+## Methodology
 
-NO2
+- Data inspection and preprocessing
+- Exploratory Data Analysis (EDA)
+- Label encoding
+- Stratified train-test split
+- Random Forest classification
+- Optimization and hyperparameter tuning
+- Model evaluation and performance comparison
 
-SO2
+## Model Configuration
 
-CO
+| Parameter | Value |
+|---|---|
+| Algorithm | Random Forest |
+| Task | Multiclass Classification |
+| Training Set | 80% |
+| Testing Set | 20% |
+| Random State | 42 |
+| Cross-Validation | 3 Folds |
 
-Proximity to Industrial Areas
+## Evaluation Metrics
 
-Population Density
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- ROC-AUC
+- Log Loss
+- Out-of-Bag Score and Error
+- Confusion Matrix
+- Execution Time
 
-Target Classes
+## Technologies Used
 
-Class
-
-Samples
-
-Good
-
-2,000
-
-Moderate
-
-1,500
-
-Poor
-
-1,000
-
-Hazardous
-
-500
-
-Total
-
-5,000
-
-Methodology
-
-Data inspection and preprocessing
-
-Exploratory Data Analysis (EDA)
-
-Label encoding
-
-Stratified train-test split
-
-Random Forest classification
-
-Optimization and hyperparameter tuning
-
-Model evaluation and performance comparison
-
-Model Configuration
-
-Parameter
-
-Value
-
-Algorithm
-
-Random Forest
-
-Task
-
-Multiclass Classification
-
-Training Set
-
-80%
-
-Testing Set
-
-20%
-
-Random State
-
-42
-
-Cross-Validation
-
-3 Folds
-
-Evaluation Metrics
-
-Accuracy
-
-Precision
-
-Recall
-
-F1-Score
-
-ROC-AUC
-
-Log Loss
-
-Out-of-Bag Score and Error
-
-Confusion Matrix
-
-Execution Time
-
-Technologies Used
-
-Python
-
-Pandas
-
-NumPy
-
-Scikit-learn
-
-Matplotlib
-
-Seaborn
-
-Kaggle Notebooks
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Kaggle Notebooks
